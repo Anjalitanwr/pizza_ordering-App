@@ -1,0 +1,13 @@
+{% comment %} {% extends "cafe/base.html" %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+<h1>Our Menu</h1>
+<ul>
+    {% for item in menu_items %}
+        <li>{{ item.name }} - ${{ item.price }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+ {% endcomment %}
